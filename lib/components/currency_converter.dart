@@ -55,8 +55,10 @@ class CurrencyConverter extends StatelessWidget {
               style: ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll(Colors.amber),
               ),
-              child: Text("Convert",
-                  style: TextStyle(color: Colors.white, fontSize: 20)),
+              child: Container(
+                child: Text("Convert",
+                    style: TextStyle(color: Colors.white, fontSize: 20)),
+              ),
             ),
           ],
         )));
