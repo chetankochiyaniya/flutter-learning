@@ -49,18 +49,27 @@ class CurrencyConverter extends StatelessWidget {
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
               ),
             ),
+            // old version name
+            // elevated button called raised button
+            // TextButton called Flat Button
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextButton(
+              child: ElevatedButton(
                 onPressed: null,
                 style: const ButtonStyle(
+                    elevation: MaterialStatePropertyAll(15),
                     backgroundColor: MaterialStatePropertyAll(Colors.amber),
-                    minimumSize:
-                        MaterialStatePropertyAll(Size(double.infinity, 50))),
+                    minimumSize: MaterialStatePropertyAll(
+                      Size(double.infinity, 50),
+                    ),
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)))),
                 child: Container(
                   margin: const EdgeInsets.all(2),
-                  child: const Text("Convert",
-                      style: TextStyle(color: Colors.white, fontSize: 20)),
+                  child: const Text(
+                    "Convert",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
                 ),
               ),
             ),
